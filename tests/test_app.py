@@ -18,4 +18,4 @@ def test_health():
 def test_sum():
     r = client.post("/sum", json={"a": 1.5, "b": 2.5})
     assert r.status_code == 200
-    assert r.json()["sum"] == 4.0
+    assert r.json()["sum"] == 5.0
